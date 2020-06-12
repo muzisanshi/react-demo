@@ -1,9 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-// import App from './App';
-import MyApp from './components/MyApp';
-import * as serviceWorker from './serviceWorker';
+import React,{Component} from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+// import App from './App'
+import MyApp from './components/MyApp'
+import * as serviceWorker from './serviceWorker'
+
+import {EventEmitter} from 'events'
+Component.prototype.$bus = new EventEmitter()
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,4 +18,4 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.unregister()
