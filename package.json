@@ -34,6 +34,9 @@
   "devDependencies": {
     "events": "^3.1.0",
     "node-sass": "^4.14.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
     "sass-loader": "^8.0.2"
   }
 }

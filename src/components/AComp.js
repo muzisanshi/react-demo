@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import {conn,mapState,mapDispatch} from '../store/index'
 import '../css/AComp.scss'
 
 class AComp extends Component{
@@ -17,4 +18,5 @@ class AComp extends Component{
 	
 }
 
+AComp = conn(mapState,mapDispatch)(AComp)
 export default AComp
